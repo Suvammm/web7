@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Blog</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Custom styles */
+        .blog-header {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .blog-card {
+            transition: transform 0.3s;
+            margin-bottom: 2rem;
+            height: 100%;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #212529;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: white;
+            transition: color 0.3s;
+        }
+        .social-icon:hover {
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Bootstrap Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="blog-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Welcome to Our Blog</h1>
+            <p class="lead text-muted">Discover the latest articles and tutorials</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Blog Post 1 -->
+            <div class="col">
+                <div class="card blog-card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?technology" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Technology</span>
+                        <h5 class="card-title">Getting Started with Bootstrap 5</h5>
+                        <p class="card-text">Learn how to quickly build responsive websites with the latest version of Bootstrap framework.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="col">
+                <div class="card blog-card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?programming" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Programming</span>
+                        <h5 class="card-title">JavaScript ES6 Features</h5>
+                        <p class="card-text">Explore the most useful features introduced in ECMAScript 6 that every developer should know.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="btn btn-success">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="col">
+                <div class="card blog-card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?design" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Design</span>
+                        <h5 class="card-title">UI/UX Best Practices</h5>
+                        <p class="card-text">Essential design principles to create intuitive and beautiful user interfaces.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="btn btn-warning">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="col">
+                <div class="card blog-card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?business" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2">Business</span>
+                        <h5 class="card-title">Remote Work Strategies</h5>
+                        <p class="card-text">How to effectively manage remote teams and maintain productivity in distributed environments.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="btn btn-info">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 5 -->
+            <div class="col">
+                <div class="card blog-card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?marketing" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Marketing</span>
+                        <h5 class="card-title">SEO in 2023</h5>
+                        <p class="card-text">Latest search engine optimization techniques to improve your website's visibility.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="btn btn-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 6 -->
+            <div class="col">
+                <div class="card blog-card h-100">
+                    <img src="https://source.unsplash.com/random/600x400/?startup" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Startup</span>
+                        <h5 class="card-title">Building MVP Fast</h5>
+                        <p class="card-text">Step-by-step guide to creating a minimum viable product that validates your business idea.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <h5>Bootstrap Blog</h5>
+                    <p class="text-muted">Providing quality content since 2023</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">&copy; 2023 Bootstrap Blog. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
